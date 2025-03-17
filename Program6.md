@@ -26,9 +26,19 @@
       return -1;
     }
 
-int main() {
-    vector<int> arr = {1, 3, 5, 7, 9, 11};
-    int key = 7;
+    int main() {
+       vector<int> arr = {1, 3, 5, 7, 9, 11};
+       int key = 7;
+   // Recursive search
+       int indexRec = binarySearchRecursive(arr, 0, arr.size() - 1, key);
+       cout << "Recursive Binary Search: " << (indexRec != -1 ? "Found at index " + to_string(indexRec) : "Not found") << endl;
+
+    // Iterative search
+    int indexIter = binarySearchIterative(arr, key);
+    cout << "Iterative Binary Search: " << (indexIter != -1 ? "Found at index " + to_string(indexIter) : "Not found") << endl;
+
+    return 0;
+    }
 
 
 ![image](https://github.com/user-attachments/assets/55834a9c-9e27-4000-b054-c15c911475fe)
