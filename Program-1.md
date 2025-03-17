@@ -1,12 +1,12 @@
 # PROGRAM 1
 
-#include <iostream>
+    include  <iostream>
 
-#include <cmath>  // For pow()
+    include <cmath>  // For pow()
 
-using namespace std;
+    using namespace std;
 
-double seriesSum(int n) {
+    double seriesSum(int n) {
    
     double sum = 0;
     for (int i = 1; i <= n; i++) {
@@ -18,9 +18,9 @@ double seriesSum(int n) {
         }
     }
     return sum;
-}
+    }
 
-int main() {
+    int main() {
   
     int n;
     cout << "Enter the number of terms: ";
