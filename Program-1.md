@@ -1,9 +1,13 @@
 # PROGRAM 1
 
 #include <iostream>
+
 #include <cmath>  // For pow()
+
 using namespace std;
+
 double seriesSum(int n) {
+   
     double sum = 0;
     for (int i = 1; i <= n; i++) {
         double term = 1.0 / pow(i, i);
@@ -15,7 +19,9 @@ double seriesSum(int n) {
     }
     return sum;
 }
+
 int main() {
+  
     int n;
     cout << "Enter the number of terms: ";
     cin >> n;
